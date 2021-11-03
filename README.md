@@ -1,21 +1,30 @@
-# Covidgraph
+# Covidgraph 
 
-**TODO: Add description**
 
-## Installation
+Learning project to make a SVG chart representing deaths from the covid in France.
+## Why ? 
+* Create an Elixir app with sub-apps and use OTP
+* Handle datas from an opendata "API"
+* Try to use new librairies
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `covidgraph` to your list of dependencies in `mix.exs`:
+## Does it works ?
+Kinda... datas are retrieved from the API endpoint the SVG chart is created.
+Nonetheless, the chart has a negative offset that i have not been able to troubleshoot.
 
-```elixir
-def deps do
-  [
-    {:covidgraph, "~> 0.1.0"}
-  ]
-end
+## Will it see any modification ?
+Probably not, but who knows ?
+
+## How can it be used ?
+After compilation you can try it with :
+
+```bash
+covidgraph --from AAAAMMDD --to AAAAMMDD --out output_folder
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/covidgraph](https://hexdocs.pm/covidgraph).
+You can also use the following command to get help.
+```bash
+covidgraph :help
+```
+
+
 
